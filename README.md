@@ -27,6 +27,25 @@
   \text{GBS} \mod \left( \sum_{i} n_i \times \text{mbs}_i \right) = 0
   $$
 
+#### --micro-batch-size-per-dp
+
+为不同的数据并行组设置微批次大小。
+
+- 格式：`n0 mbs0 n1 mbs1 ...`
+
+  - `n0, n1, ...`：数据并行组内连续设备个数。
+  - `mbs0, mbs1, ...`：对应设备组的微批次大小。
+
+- 约束：
+
+  $$
+  \sum_{i} n_i = \text{data-parallel-size}
+  $$
+
+  $$
+  \text{GBS} \mod \left( \sum_{i} n_i \times \text{mbs}_i \right) = 0
+  $$
+  
 #### --num-micro-batches-per-dp
 
 为不同的数据并行组设置微批次数量。
