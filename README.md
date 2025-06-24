@@ -37,7 +37,7 @@
   - `nmb0, nmb1, ...`：对应设备组的微批次数量。
 
 - 约束：
-  
+
   $$
   \sum_{i} n_i = \text{data-parallel-size}
   $$
