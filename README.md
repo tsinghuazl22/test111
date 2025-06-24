@@ -36,6 +36,7 @@
   - `n0, n1, ...`：数据并行组内连续设备个数。
   - `nmb0, nmb1, ...`：对应设备组的微批次数量。
 
+
 - 约束：
 
   $$
@@ -45,6 +46,7 @@
   $$
   \text{global\_batch\_size} = \sum_{i} n_i \times \text{mbs}_i \times \text{num\_mbs}_i
   $$
+
 
 ---
 
